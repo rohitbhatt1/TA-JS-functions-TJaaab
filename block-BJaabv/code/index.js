@@ -8,9 +8,21 @@
   * [ ] Add an additional argument to the function that takes the conversion rate of human to dog years.
 */
 
-function calculateDogAge() {
-  // Your code goes here
+function calculateDogAge(puppyAge) {
+  return `Dog Age is ${puppyAge * 7}`;
 }
+
+calculateDogAge(2);
+   /*
+
+  function calculateDogAge(age) {
+  const puppyAge = 7;
+  return puppyAge * age;
+}
+calculateDogAge();
+
+   */
+
 
 /*
 2. 🎖Write a function named calculateMoviesToWatch that:
@@ -19,9 +31,24 @@ function calculateDogAge() {
   * [ ] Return the total number of movie you will watch.
 */
 
-function calculateMoviesToWatch() {
-  // Your code goes here
+function calculateMoviesToWatch(age , movies) {
+  const MAX_AGE = 80;
+   return `Total Movies are in ${(MAX_AGE - age) * 4 * 12 * movies}`;
 }
+calculateMoviesToWatch(12,3)
+
+/*
+function calculateMoviesToWatch(age, noOfMovie) {
+  const MAX_AGE = 80;
+  let totalNumberOfMovies =
+   (MAX_AGE - age) * 12 * 4 * noOfMovie;
+  return totalNumberOfMovies;
+}
+
+console.log(calculateMoviesToWatch(70,4));
+VM2908:8 1920
+
+*/
 
 /*
 3. 🎖Create a function called celsiusToFahrenheit:
@@ -29,9 +56,34 @@ function calculateMoviesToWatch() {
   * [ ] Convert it to fahrenheit and return "NN°F is NN°C"
 */
 
-function celsiusToFahrenheit() {
-  // Your code goes here
+function celsiusToFahrenheit(tempCelsius) {
+  return `Temperature is Fahrenheit is ${(tempCelsius * 9) / 5 + 32} degree F`;
 }
+
+celsiusToFahrenheit(37.5);
+
+//difference style
+/*
+function celsiusToFahrenheit(temperatureInCelsius) {
+  const div1 = 9;
+  const div2 = 5;
+  const add = 32;
+  return (temperatureInCelsius * div1) / div2 + add;
+}
+
+celsiusToFahrenheit(37.5);
+99.5
+
+function celsiusToFahrenheit(temperature) {
+ return (temperature * 9/5) + 32 ;
+}
+
+console.log(celsiusToFahrenheit(37.5));
+//ou
+
+VM3008:5 99.5
+undefined
+*/
 
 /*
 4. 🎖Create a function called fahrenheitToCelsius:
@@ -39,11 +91,22 @@ function celsiusToFahrenheit() {
   * [ ] Convert it to celsius and return "NN°F is NN°C"
 */
 
-function celsiusToFahrenheit() {
-  // Your code goes here
+function celsiusToFahrenheit(tepmFah) {  
+  return `Temperature is Celcius is ${((tempFah - 32) * 5) / 9} degree C`;
 }
-
+console.log(celsiusToFahrenheit(54));
 /*
+
+function fahrenheitToCelsius(temperature) {
+  return (temperature - 32) * 5/9 ;
+}
+console.log(fahrenheitToCelsius(7));
+
+*/ 
+//output 4.
+// Temperature is Celcius is -5 degree C.
+/*
+
 5. 🎖 Write a function pow(n, x) that returns x in power n.
 
   * [ ] The function accepts two parameter x and n.
@@ -51,8 +114,8 @@ function celsiusToFahrenheit() {
   * [ ] If the value of n is below 0 return "The number below 1 is not allowed"
 */
 
-function pow() {
-  // Your code goes here
+function pow(n, x) {
+  return
 }
 
 // Test
